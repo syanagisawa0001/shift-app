@@ -313,7 +313,7 @@ with st.sidebar:
 
     logged_user = None
     if auth_opt == "ログイン":
-        ln = st.text_input("名前", placeholder="例: 柳沢真")
+        ln = st.text_input("名前", placeholder="例: 山田太郎")
         lp = st.text_input("PIN (4桁)", type="password", placeholder="****")
         if st.button("ログイン 🚀", key="login_btn", use_container_width=True):
             users = st.session_state["sheet_info"].get("users", [])
